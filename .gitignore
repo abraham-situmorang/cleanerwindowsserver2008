@@ -1,0 +1,10 @@
+# Build object files
+*.o
+*.obj
+*.res
+*.pdb
+*.ilk
+
+# Temporary test files
+test_*.exe
+*.csv

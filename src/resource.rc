@@ -1,0 +1,44 @@
+/*
+ * Cleaner Windows Server 2008 - Resource Script
+ * Copyright (c) 2026 Abraham Situmorang - Nanoquity 2026
+ * www.nanoquity.com
+ */
+
+#include <windows.h>
+#include "resource.h"
+
+/* Application Icon */
+IDI_APP_ICON ICON "../assets/app.ico"
+
+/* Application Manifest (Common Controls v6 & Windows Server 2008 R2 Compatibility) */
+CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "app.manifest"
+
+/* Version Information */
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION     1,0,0,0
+PRODUCTVERSION  1,0,0,0
+FILEFLAGSMASK   VS_FFI_FILEFLAGSMASK
+FILEFLAGS       0x0L
+FILEOS          VOS_NT_WINDOWS32
+FILETYPE        VFT_APP
+FILESUBTYPE     VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName",      "Nanoquity (www.nanoquity.com)\0"
+            VALUE "FileDescription",  "Cleaner Windows Server 2008 - High Performance Log & Junk Cleaner\0"
+            VALUE "FileVersion",      "1.0.0.0\0"
+            VALUE "InternalName",     "CleanerWinServer2008.exe\0"
+            VALUE "LegalCopyright",   "Copyright (c) 2026 Abraham Situmorang | Nanoquity 2026 | www.nanoquity.com\0"
+            VALUE "OriginalFilename", "CleanerWinServer2008.exe\0"
+            VALUE "ProductName",      "Cleaner Windows Server 2008\0"
+            VALUE "ProductVersion",   "1.0.0.0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 1200
+    END
+END
